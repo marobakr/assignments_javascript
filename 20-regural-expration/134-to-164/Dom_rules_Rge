@@ -1,0 +1,33 @@
+/[put here your patter]/
+/[]/g => to get all matches
+/[]/i => to get all words be start small word or capital word "sennistive"
+/[xxx]/ => to get all words contain this char"
+/[num-num]/ => to get eny num in this range 
+/[^]/ => to get eny things wethout your pattern 
+/()/  => to get some group 
+/(word|word|word)/ => to get any word from this group
+/xx[num-num]XX/ => to get any char start with xx and end with XX
+/./g => to get eny thig wethout new line
+/\w/ => to get words and number
+/\W/ => dosent get words and number this get any special char and space 
+/\w@/ => get any char sart with word and after @ 
+/\w@\w/ => get any char sart with word and after @ and end word char "letter"
+/\w@\w.com/ => get any char sart with word and after and @ end word.com 
+/\w@\w.(com|org)/ => get any char sart with word and after and @ end word.com or word.org
+/\b / => matches any char start with your pattern
+/   \b/ => matches any char end with your pattern
+/(\bspam|spam\b) / => matches any char be start or end with your pattern "spam"
+your pattern.test(input) => get true or false
+/B => match not at the beginnig / end of a word 
+/* quantifiers 
+n+ => one or more "one char on increase one "فيه واحد علي الاقل او اكتر "
+n* => zero or more "مش موجود او موجود >> d* = diget
+n? => zero or one "موجود واحد علي الاقل او مش موجود"
+n{x} => number of >> say /s\d{num}s/ig ==> to get any words start with "s" and end with "s" and between digets
+n{x,y} ==> to get range between x to y
+n{x,} => at least x to infinty num
+$ => end with something ..say ==> /ing$/ig.test
+^ => start with something ..say ==> /ing^/ig.test
+\s => to get space 
+?= => follwed by somthing 
+?! => not followed by somthing
